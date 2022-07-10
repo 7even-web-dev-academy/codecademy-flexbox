@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+  </head>
+  <body>
+    <h1>flex</h1>
+    <p>
+      The shorthand flex property provides a convenient way for specifying how
+      elements stretch and shrink, while simplifying the CSS required. The flex
+      property allows you to declare flex-grow, flex-shrink, and flex-basis all
+      in one line.
+    </p>
+
+    <p>
+      Note: The flex property is different from the flex value used for the
+      display property.
+    </p>
+
+    <pre>
+      <code>
+        .big {
+          flex-grow: 2;
+          flex-shrink: 1;
+          flex-basis: 150px;
+        }
+
+        .small {
+          flex-grow: 1;
+          flex-shrink: 2;
+          flex-basis: 100px;
+        }
+      </code>
+    </pre>
+
+    <p>
+      In the example above, all elements with class big will grow twice as much
+      as elements with class small. Keep in mind, this doesn’t mean big items
+      will be twice as big as small items, they’ll just take up more of the
+      extra space.
+    </p>
+
+    <p>The CSS below declares these three properties in one line.</p>
+
+    <pre>
+      <code>
+        .big {
+          flex: 2 1 150px;
+        }
+
+        .small {
+          flex: 1 2 100px;
+        }
+      </code>
+    </pre>
+
+    <p>
+      In the example above, we use the flex property to declare the values for
+      flex-grow, flex-shrink, and flex-basis (in that order) all in one line.
+    </p>
+
+    <pre>
+      <code>
+        .big {
+          flex: 2 1;
+         }
+      </code>
+    </pre>
+
+    <p>
+      In the example above, we use the flex property to declare flex-grow and
+      flex-shrink, but not flex-basis.
+    </p>
+
+    <pre>
+      <code>
+        .small {
+          flex: 1 20px;
+        }
+      </code>
+    </pre>
+
+    <p>
+      In the example above, we use the flex property to declare flex-grow and
+      flex-basis. Note that there is no way to set only flex-shrink and
+      flex-basis using 2 values.
+    </p>
+
+    <p>
+      The browser to the right has two flex containers, each with three flex
+      items. In style.css, examine the values for each of these items. Notice
+      that the flex-grow and flex-basis values are set for the blue divs.
+    </p>
+
+    <p>
+      Stretch the browser window to increase its width. Observe that once the
+      top outer divs reach 100 pixels wide, they begin to grow faster than the
+      top center div. Also notice that once the bottom center div reaches 100
+      pixels wide, it begins to grow faster than the outer divs.
+    </p>
+
+    <p>
+      Now, shrink the browser window and notice that once the top center div
+      reaches 50 pixels wide it begins to shrink faster than the outer divs and
+      when the bottom outer divs reach 75 pixels, they begin to shrink faster
+      than the center div.
+    </p>
+
+    <h2>Instructions</h2>
+
+    <ol>
+      <li>
+        In #top .side, all three values for flex-grow, flex-shrink, and
+        flex-basis are assigned individually. Refactor them to be declared in
+        one line using the shorthand flex property.
+      </li>
+      <li>
+        In #top .center, all three values for flex-grow, flex-shrink, and
+        flex-basis are assigned individually. Refactor them to be declared in
+        one line.
+      </li>
+      <li>
+        In #bottom .side, all three values for flex-grow, flex-shrink, and
+        flex-basis are assigned individually. Refactor them to be declared in
+        one line.
+      </li>
+      <li>
+        In #bottom .center, all three values for flex-grow, flex-shrink, and
+        flex-basis are assigned individually. Refactor them to be declared in
+        one line
+      </li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-basis</title>
+  </head>
+  <body>
+    <h1>flex-basis</h1>
+    <p>
+      In the previous two exercises, the dimensions of the divs were determined
+      by heights and widths set with CSS. Another way of specifying the width of
+      a flex item is with the flex-basis property. flex-basis allows us to
+      specify the width of an item before it stretches or shrinks.
+    </p>
+
+    <pre>
+      <code>
+        &LT;div class='container'&GT;
+          &LT;div class='side'&GT;
+            &LT;h1&GT;I’m on the side of the flex container!&LT;/h1&GT;
+          &LT;/div&GT;
+          &LT;div class='center'&GT;
+            &LT;h1&GT;I'm in the center of the flex container!&LT;/h1&GT;
+          &LT;/div&GT;
+          &LT;div class='side'&GT;
+            &LT;h1&GT;I'm on the other side of the flex container!&LT;/h1&GT;
+          &LT;/div&GT;
+        &LT;/div&GT;
+      </code>
+    </pre>
+
+    <pre>
+      <code>
+        .container {
+          display: flex;
+        }
+
+        .side {
+          flex-grow: 1;
+          flex-basis: 100px;
+        }
+
+        .center {
+          flex-grow: 2;
+          flex-basis: 150px;
+        }
+      </code>
+    </pre>
+
+    <p>
+      In the example above, the .side divs will be 100 pixels wide and the
+      .center div will be 150 pixels wide if the .container div has just the
+      right amount of space (350 pixels, plus a little extra for margins and
+      borders). If the .container div is larger, the .center div will absorb
+      twice as much space as the .side divs.
+    </p>
+
+    <p>
+      The same would hold true if we assigned flex-shrink values to the divs
+      above as well.
+    </p>
+
+    <h2>Instructions</h2>
+
+    <ol>
+      <li>
+        In style.css, inside the .grow.side ruleset, add a flex-basis of 60px.
+      </li>
+      <li>In the same rule, add a flex-grow value of 1.</li>
+      <li>
+        In the .grow.center rule, add a flex-grow property with a value of 3.
+      </li>
+      <li>
+        In the .shrink.side rule, add a flex-basis property with a value of
+        300px.
+      </li>
+      <li>In the same rule, add a flex-shrink property with a value of 3.</li>
+      <li>
+        In the .shrink.center rule, add a flex-shrink property with a value of
+        2.
+      </li>
+      <li>
+        In the same rule, add a flex-basis property with a value of 150px. Now
+        stretch and shrink the browser.
+      </li>
+    </ol>
+  </body>
+</html>

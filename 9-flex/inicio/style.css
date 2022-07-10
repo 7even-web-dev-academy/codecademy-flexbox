@@ -1,0 +1,54 @@
+body {
+  border: 0;
+  margin: 0 15px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  text-align: center;
+  display: block;
+  font-size: 18px;
+}
+
+.container {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.side,
+.center {
+  height: 75px;
+  background-color: dodgerblue;
+  border: 1px solid lightgrey;
+  display: inline-block;
+}
+
+#top .side {
+  /* 1. refactor this three prperty using just the flex property */
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 100px;
+}
+
+#top .center {
+  /* 2. refactor these three properties using just the flex property */
+  flex-grow: 1;
+  flex-shrink: 3;
+  flex-basis: 50px;
+}
+
+#bottom .side {
+  /* 3. refactor these three properties using just the flex property */
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 75px;
+}
+
+#bottom .center {
+  /* 4. refactor these three properties using just the flex property */
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}

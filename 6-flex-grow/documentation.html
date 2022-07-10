@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-grow</title>
+  </head>
+  <body>
+    <h1>flex-grow</h1>
+    <p>
+      In Exercise 3, we learned that all flex items shrink proportionally when
+      the flex container is too small. However, if the parent container is
+      larger than necessary then the flex items will not stretch by default. The
+      flex-grow property allows us to specify if items should grow to fill a
+      container and also which items should grow proportionally more or less
+      than others
+    </p>
+
+    <pre>
+      <code>
+        &LT;div class='container'&GT;
+          &LT;div class='side'&GT;
+            &LT;h1&GT;I’m on the side of the flex container!&LT;/h1&GT;
+          &LT;/div&GT;
+          &LT;div class='center'&GT;
+            &LT;h1&GT;I'm in the center of the flex container!&LT;/h1&GT;
+          &LT;/div&GT;
+          &LT;div class='side'&GT;
+            &LT;h1&GT;I'm on the other side of the flex container!&LT;/h1&GT;
+          &LT;/div&GT;
+        &LT;/div&GT;
+      </code>
+    </pre>
+
+    <pre>
+      <code>
+        .container {
+          display: flex;
+        }
+
+        .side {
+          width: 100px;
+          flex-grow: 1;
+        }
+
+        .center {
+          width: 100px;
+          flex-grow: 2;
+        }
+      </code>
+    </pre>
+
+    <p>
+      In the example above, the .container div has a display value of flex, so
+      its three child divs will be positioned next to each other. If there is
+      additional space in the .container div (in this case, if it is wider than
+      300 pixels), the flex items will grow to fill it. The .center div will
+      stretch twice as much as the .side divs. For example, if there were 60
+      additional pixels of space, the center div would absorb 30 pixels and the
+      side divs would absorb 15 pixels each.
+    </p>
+
+    <p>
+      If a max-width is set for an element, it will not grow larger than that
+      even if there is more space for it to absorb.
+    </p>
+
+    <p>
+      All of the previous properties we have learned are declared on flex
+      containers, or the parent elements. This property — flex-grow — is the
+      first we have learned that is declared on flex items.
+    </p>
+
+    <h2>Instructions</h2>
+
+    <ol>
+      <li>
+        Assign .top.side and .top.center a flex-grow value of 1. Stretch and
+        shrink the browser.
+      </li>
+      <li>
+        Assign .middle.center the flex-grow value of 1. Stretch and shrink the
+        browser again.
+      </li>
+      <li>
+        Assign .bottom.side a flex-grow value of 1 and .bottom.center a
+        flex-grow value of 2. Shrink and stretch the browser again. Compare the
+        differences in behavior of all three sections.
+      </li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>align-items</title>
+  </head>
+  <body>
+    <h1>align-items</h1>
+    <p>
+      In the previous exercise, you learned how to justify the content of a flex
+      container from left to right across the page. It is also possible to align
+      flex items vertically within the container. The align-items property makes
+      it possible to space flex items vertically.
+    </p>
+
+    <pre>
+      <code>
+        .container {
+          align-items: baseline;
+        }
+      </code>
+    </pre>
+
+    <p>
+      In the example above, the align-items property is set to baseline. This
+      means that the baseline of the content of each item will be aligned.
+    </p>
+
+    <p>Below are five commonly used values for the align-items property:</p>
+
+    <ul>
+      <li>
+        flex-start — all elements will be positioned at the top of the parent
+        container.
+      </li>
+      <li>
+        flex-end — all elements will be positioned at the bottom of the parent
+        container.
+      </li>
+      <li>
+        center — the center of all elements will be positioned halfway between
+        the top and bottom of the parent container
+      </li>
+      <li>
+        baseline — the bottom of the content of all items will be aligned with
+        each other.
+      </li>
+      <li>
+        stretch — if possible, the items will stretch from top to bottom of the
+        container (this is the default value; elements with a specified height
+        will not stretch; elements with a minimum height or no height specified
+        will stretch).
+      </li>
+    </ul>
+
+    <p>
+      These five values tell the elements how to behave along the cross axis of
+      the parent container. In these examples, the cross axis stretches from top
+      to bottom of the container. We’ll learn more about this in a future
+      exercise.
+    </p>
+
+    <p>
+      You might be unfamiliar with the min-height and max-height properties, but
+      you have used height and width before. min-height, max-height, min-width,
+      and max-width are properties that ensure an element is at least a certain
+      size or at most a certain size. You’ll see how these become useful as you
+      move throughout this lesson.
+    </p>
+
+    <p>Now you’re going to see each of the five values above in action!</p>
+
+    <h2>Instructions</h2>
+
+    <ol>
+      <li>
+        <div>
+          <p>
+            Assign the &LT;div&GT; element with the id flexstartan align-items
+            property with the value flex-start.
+          </p>
+        </div>
+      </li>
+      <li>
+        Assign the &LT;div&GT; element with the id flexend an align-items
+        property with a value of flex-end.
+      </li>
+      <li>
+        Assign the &LT;div&GT; element with the id center an align-items
+        property with a value of center.
+      </li>
+      <li>
+        Assign the &LT;div&GT; elementwith id baseline an align-items property
+        with the value baseline. How does the behavior of these elements differ
+        from those in other divs?
+      </li>
+      <li>
+        Take a look at the elements under “Stretch” at the bottom of the page.
+        Now, in the .left, .center, .right ruleset, change the height property
+        to min-height and observe what happens to these elements.
+      </li>
+    </ol>
+  </body>
+</html>
