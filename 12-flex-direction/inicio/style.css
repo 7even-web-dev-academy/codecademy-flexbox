@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.container {
+  background-color: dodgerblue;
+  display: flex;
+  /* 5. change the height property for max-height */
+  height: 600px;
+  /* 6. add a align-items property with a value of center */
+  /* 7. add a justify-content property with a value of space-around */
+}
+
+.box {
+  background-color: whitesmoke;
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+  /* 8. add a flex-grow property with a value of 1 */
+}
+
+#row {
+  /* 1. add a flex-direction property with a value of row */
+}
+
+#row-reverse {
+  /* 2. add a flex-direction property with a value of row-reverse */
+}
+
+#column {
+  /* 3. add a flex-direction property with a value of column */
+}
+
+#column-reverse {
+  /* 4. add a flex-direction property with a value of column-reverse */
+}

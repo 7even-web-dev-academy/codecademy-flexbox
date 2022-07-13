@@ -1,0 +1,49 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  margin: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container {
+  height: 300px;
+  width: 600px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.left,
+.center,
+.right {
+  /* 6. change the height property to min-height */
+  height: 75px;
+  width: 200px;
+  margin: 2px;
+  background-color: dodgerblue;
+  border: 2px solid lightgrey;
+}
+
+#flexstart {
+  /* 1. add an align-content property with a value of flex-start */
+}
+
+#flexend {
+  /* 2. add an align-content property with a value of flex-end */
+}
+
+#center {
+  /* 3. add an align-content property with a value of center */
+}
+
+#between {
+  /* 4. add an align-content property with a value of space-between */
+}
+
+#around {
+  /* 5. add an align-content property with a value of space-around */
+}

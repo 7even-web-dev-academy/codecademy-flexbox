@@ -1,0 +1,38 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.main {
+  background-color: lightgrey;
+  width: 400px;
+  height: 700px;
+  /* 1. add a display property with a value of flex */
+  /* 2. add an align-items property with a value of center */
+  /* 3. add a justify-content property with a value of space-around */
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  background-color: dodgerblue;
+  border: 1px solid white;
+  /* 4. add a display property with a value of flex */
+  /* 5. add a flex-direction property with a value of column */
+  /* 6. add an justify-content property with a value of center */
+  /* 7. add an align-items property with a value of center */
+}
+
+.child {
+  height: 75px;
+  width: 75px;
+  background-color: whitesmoke;
+  border: 1px solid snow;
+  /* 8. add a display property with a value of flex */
+  /* 9. add an justify-content property with a value of center */
+  /* 10. add an align-items property with a value of center */
+}

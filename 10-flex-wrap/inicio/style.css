@@ -1,0 +1,39 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+.container {
+  background-color: dodgerblue;
+  display: flex;
+  align-items: center;
+  min-height: 125px;
+  /* 4. add a justify-content property with a value of space-around */
+}
+
+.box {
+  background-color: whitesmoke;
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+}
+
+#wrap {
+  /* 1. add a flex-wrap with a value of wrap */
+}
+
+#nowrap {
+  /* 2. add a flex-wrap with a value of nowrap */
+}
+
+#reverse {
+  /* 3. add a flex-wrap with a value of wrap-reverse */
+}

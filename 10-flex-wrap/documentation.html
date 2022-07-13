@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-wrap</title>
+  </head>
+  <body>
+    <h1>flex-wrap</h1>
+    <p>
+      Sometimes, we don’t want our content to shrink to fit its container.
+      Instead, we might want flex items to move to the next line when necessary.
+      This can be declared with the flex-wrap property. The flex-wrap property
+      can accept three values:
+    </p>
+
+    <ol>
+      <li>
+        wrap — child elements of a flex container that don’t fit into a row will
+        move down to the next line
+      </li>
+      <li>
+        wrap-reverse — the same functionality as wrap, but the order of rows
+        within a flex container is reversed (for example, in a 2-row flexbox,
+        the first row from a wrap container will become the second in
+        wrap-reverse and the second row from the wrap container will become the
+        first in wrap-reverse)
+      </li>
+      <li>
+        nowrap — prevents items from wrapping; this is the default value and is
+        only necessary to override a wrap value set by a different CSS rule.
+      </li>
+    </ol>
+
+    <pre>
+      <code>
+        &LT;div class='container'&GT;
+          &LT;div class='item'&GT;
+            &LT;h1&GT;We're going to wrap!&LT;/h1&GT;
+          &LT;/div&GT;
+          &LT;div class='item'&GT;
+            &LT;h1&GT;We're going to wrap!&LT;/h1&GT;
+          &LT;/div&GT;
+          &LT;div class='item'&GT;
+            &LT;h1&GT;We're going to wrap!&LT;/h1&GT;
+          &LT;/div&GT;
+        &LT;/div&GT;
+      </code>
+    </pre>
+
+    <pre>
+      <code>
+        .container {
+          display: inline-flex;
+          flex-wrap: wrap;
+          width: 250px;
+        }
+
+        .item {
+          width: 100px;
+          height: 100px;
+        }
+      </code>
+    </pre>
+
+    <p>
+      In the example above, three flex items are contained by a parent flex
+      container. The flex container is only 250 pixels wide so the three 100
+      pixel wide flex items cannot fit inline. The flex-wrap: wrap; setting
+      causes the third, overflowing item to appear on a new line, below the
+      other two items.
+    </p>
+
+    <p>Note: The flex-wrap property is declared on flex containers.</p>
+
+    <h2>Instructions</h2>
+
+    <ol>
+      <li>
+        In style.css, inside the #wrap ruleset, add a flex-wrap property with a
+        value of wrap. Shrink and stretch the browser.
+      </li>
+      <li>
+        Inside the #nowrap ruleset, add a flex-wrap property with a value of
+        nowrap. Shrink and stretch the browser.
+      </li>
+      <li>
+        Inside the #reverse ruleset, add a flex-wrap property with a value of
+        wrap-reverse. Shrink and stretch the browser.
+      </li>
+      <li>
+        Inside the .container ruleset, add a justify-content property with a
+        value of space-around. Stretch and shrink the browser. What’s different
+        this time?
+      </li>
+    </ol>
+  </body>
+</html>
